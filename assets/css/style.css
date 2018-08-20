@@ -1,7 +1,57 @@
-body {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    padding: 0%;
-    box-sizing: border-box;
 
+html, body {
+    height:100%;
+} 
+
+body {
+    background-color: black;
+    background-image: url("../images/background.jpg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.charList {
+    height: 200px;
+    padding: 0%;
+}
+
+.danaerys {
+    background-color: black;
+    background-image: url("../images/danaerys.jpg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jonsnow {
+    background-color: black;
+    background-image: url("../images/jonsnow.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cersei {
+    background-color: black;
+    background-image: url("../images/cersei.jpg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nightking {
+    background-color: black;
+    background-image: url("../images/nightking.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h5 {
+    padding-top: 130px;
+}
+
+#middle {
+    height: 200px;
 }
