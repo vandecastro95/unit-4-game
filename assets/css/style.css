@@ -11,6 +11,14 @@ body {
     background-position: right bottom;
 }
 
+.fitscreen {
+    background-color: black;
+    background-image: url("../images/fitscreen.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
 .charList {
     height: 200px;
     padding: 0%;
@@ -19,7 +27,7 @@ body {
 .danaerys {
     background-color: black;
     background-image: url("../images/danaerys.jpg");
-    background-size: 90%;
+    background-size: 130%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -35,7 +43,7 @@ body {
 .cersei {
     background-color: black;
     background-image: url("../images/cersei.jpg");
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -53,5 +61,31 @@ h5 {
 }
 
 #middle {
-    height: 200px;
+    height: 350px;
+    display: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
+
+.HP {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2px;
+
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+}
+
+.attack {
+    position: absolute;
+    
+} 
+
+
+
+

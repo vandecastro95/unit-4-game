@@ -13,32 +13,48 @@
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-            <div class=""></div>
-
-            <div class="container-fluid ">
+            <div class="container-fluid">
                     <div id="topSelector" class="row fixed-top charList text-center text-white">
-                            <div class="border border-light col-2 danaerys m-2 ml-5 char" value ="danaerys"><h6>danaerys</h6></div>
-                            <div class="border border-light col-2 jonsnow m-2 char" value ="jonsnow"><h6>jonsnow</h6></div>
-                            <div class="border border-light col-2 nightking m-2 char" value ="nightking"><h6>nightking</h6></div>
-                            <div class="border border-light col-2 cersei m-2 char" value ="cersei"><h6>cersei</h6></div>
+                            <div class=" col-2 danaerys m-2 ml-5 char" value ="danaerys"><h6>danaerys</h6></div>
+                            <div class=" col-2 jonsnow m-2 char" value ="jonsnow"><h6>jonsnow</h6></div>
+                            <div class=" col-2 nightking m-2 char" value ="nightking"><h6>nightking</h6></div>
+                            <div class=" col-2 cersei m-2 char" value ="cersei"><h6>cersei</h6></div>
                     </div>
 
                     <div id="middle" class="row">
-                        <div class="col-4 border border-light attacker m-2">Attacker</div>
-                        <div class="col-4 border border-light defender m-2">defender</div>
+                        <div class="col-8  attacker mt-2 ml-2 mb-1 text-white border border-light mr-2">
+                            <h1 class="attackerName name"></h1>
+                            <span class="attackerHP float-right HP"> HP: </span>
+                       </div>
+        
+                        <div class="col-8 defender ml-2 my-2 text-white border border-light">
+                            <h1 class="defenderName name"></h1>
+                            <span class="defenderHP float-right HP"> HP: </span>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-2">attack</div>
-                        <div class="col-2"></div>
+                        <div class="col-1"><button class="attack ml-0 btn btn-danger">attack</button></div>
+                        <div class="col-11"><span class="whenAttacks text-danger ml-5"></span></div>
                     </div>
-        
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-11"><span class="whenCounters text-danger ml-5"></span></div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row nextOne">
+                        <div class="col-12 "> Choose next Enemy </div>
+                    </div>
+                    
                     <div class="row"></div>
                     <div id="enemySelector" class="row fixed-bottom charList text-center text-white">
-                        <div class="border border-light col-2 danaerys m-2 ml-5 char"><h6>danaerys</h6><h5 class="align-bottom">100</h5></div>
-                        <div class="border border-light col-2 jonsnow m-2 char"><h6>jonsnow</h6><h5 class="align-bottom">180</h5></div>
-                        <div class="border border-light col-2 nightking m-2 char"><h6>nightking</h6><h5 class="align-bottom">150</h5></div>
-                        <div class="border border-light col-2 cersei m-2 char"><h6>cersei</h6><h5 class="align-bottom">120</h5></div>
+                        <div id = "danaerys" class=" col-2 danaerys m-2 ml-5 char bot"><h6 class="mb-1">danaerys</h6></div>
+                        <div id = "jonsnow" class=" col-2 jonsnow m-2 char bot"><h6 class="mb-1">jonsnow</h6></div>
+                        <div id = "nightking" class=" col-2 nightking m-2 char bot"><h6 class="mb-1">nightking</h6></div>
+                        <div id = "cersei" class=" col-2 cersei m-2 char bot"><h6 class="mb-1">cersei</h6></div>
                     </div>
                 </div>
 
