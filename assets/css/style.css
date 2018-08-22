@@ -61,7 +61,7 @@ h5 {
 }
 
 #middle {
-    height: 350px;
+    height: 300px;
     display: absolute;
     bottom: 0;
     width: 100%;
@@ -81,10 +81,17 @@ h5 {
     bottom: 0;
 }
 
-.attack {
-    position: absolute;
-    
-} 
+.attacker {
+    height: 100%;
+}
+
+.defender {
+    height: 100%;
+}
+
+
+
+
 
 
 

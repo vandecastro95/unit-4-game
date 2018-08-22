@@ -14,7 +14,7 @@
     </head>
     <body>
             <div class="container-fluid">
-                    <div id="topSelector" class="row fixed-top charList text-center text-white">
+                    <div id="topSelector" class="row fixed-top charList text-white">
                             <div class=" col-2 danaerys m-2 ml-5 char" value ="danaerys"><h6>danaerys</h6></div>
                             <div class=" col-2 jonsnow m-2 char" value ="jonsnow"><h6>jonsnow</h6></div>
                             <div class=" col-2 nightking m-2 char" value ="nightking"><h6>nightking</h6></div>
@@ -31,26 +31,33 @@
                             <h1 class="defenderName name"></h1>
                             <span class="defenderHP float-right HP"> HP: </span>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-1"><button class="attack ml-0 btn btn-danger">attack</button></div>
-                        <div class="col-11"><span class="whenAttacks text-danger ml-5"></span></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-11"><span class="whenCounters text-danger ml-5"></span></div>
+                        <div class="col-4">
+                            <div class="row">
+                                <button class=" col-12 attack ml-0 btn btn-danger">attack</button>
+                                <span class="col-12 whenCounters text-danger "></span>
+                                    <span class="col-12 whenAttacks text-danger"></div>
+                                        <div class="row nextOne">
+                                                <div class="col-12 ml-2 text-warning"> Choose next Enemy! </div>
+                                            </div>  
+                                
+                            </div>
+                                                                               
+                                    
                         </div>
                     </div>
 
+                    
+                        
+                        
+                    
+
                     <br>
-                    <div class="row nextOne">
-                        <div class="col-12 "> Choose next Enemy </div>
-                    </div>
+                    
+
+                    
                     
                     <div class="row"></div>
-                    <div id="enemySelector" class="row fixed-bottom charList text-center text-white">
+                    <div id="enemySelector" class="row fixed-bottom charList text-white">
                         <div id = "danaerys" class=" col-2 danaerys m-2 ml-5 char bot"><h6 class="mb-1">danaerys</h6></div>
                         <div id = "jonsnow" class=" col-2 jonsnow m-2 char bot"><h6 class="mb-1">jonsnow</h6></div>
                         <div id = "nightking" class=" col-2 nightking m-2 char bot"><h6 class="mb-1">nightking</h6></div>
