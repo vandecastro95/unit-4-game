@@ -1,30 +1,34 @@
 let characters = {
     'cersei': {
-        name: 'cersei',
-        health: 120,
+        name: 'Cersei',
+        health: 200,
         attack: 8,
         imageUrl: "../images/cersei.jpg",
+        win: "../images/cerseiwin.gif",
         enemyAttackBack: 15
     },
     'danaerys': {
-        name: 'danaerys',
-        health: 120,
+        name: 'Danaerys',
+        health: 180,
         attack: 14,
         imageUrl: "../images/danaerys.jpg",
+        win : "danaeryswin.gif",
         enemyAttackBack: 5
     },
     'nightking': {
-        name: 'nightking',
-        health: 150,
+        name: 'Night king',
+        health: 250,
         attack: 8,
         imageUrl: "../images/nightking.jpg",
+        win : "nightkingwin.gif",
         enemyAttackBack: 20
     },
     'jonsnow': {
-        name: 'jonsnow',
-        health: 180,
+        name: 'Jon Snow',
+        health: 280,
         attack: 7,
         imageUrl: "../images/jonsnow.jpg",
+        win : '../images/jonsnowwin.gif',
         enemyAttackBack: 20
     }
 };
@@ -53,26 +57,32 @@ function fightSequence() {
         $('.attack').on("click", function () {
 
             if (attackerHP >= 0 || defenderHP >= 0) {
-                attackerHP -= characters[defender].enemyAttackBack;
+                attackerHP -= defenderCP;
                 document.querySelector('.attackerHP').innerText = 'HP: ' + attackerHP;
-                console.log(characters[defender].enemyAttackBack)
+                
                 defenderHP -= attackerAP;
                 document.querySelector('.whenAttacks').innerText = attackerNm + " attacked " + defenderNm + " for " + attackerAP + " damage! ";
-                document.querySelector('.whenCounters').innerText = defenderNm + " counter attacked for " + characters[defender].enemyAttackBack + " damage!"
-                console.log(defenderHP)
+                document.querySelector('.whenCounters').innerText = defenderNm + " counter attacked for " + defenderCP + " damage!"
+                
                 document.querySelector('.defenderHP').innerText = 'HP: ' + defenderHP;
                 attackerAP += attackPower;
-                console.log(attackerAP)
+                
 
 
             }
 
 
             if (defenderHP <= 0) {
+                enemies--;
+                if (enemies == 0) {
+                    $('body').css('background-image', 'url("' + characters[attacker].win + '")');
+                    $('body').hide();
+                }
+
                 document.querySelector('.defenderHP').innerText = "";
                 document.querySelector('.defenderName').innerText = 'Enemy defeated';
                 fightStarted = false;
-                enemies--;
+                
                 $(".nextOne").show();
                 $('.defender').removeClass(defender);
                 defender = null;
@@ -81,8 +91,8 @@ function fightSequence() {
             if (attackerHP <= 0) {
                 $('.attacker')
                 $(".nextOne").hide();
-                document.querySelector('.attackerName').innerText = "You Lost, Press any key to start again";
-                document.querySelector('.attackerHP').innerText = "";
+                document.querySelector('.attackerHP').innerText = "0";
+                document.querySelector('.attackerName').innerText = "You Lost, Press any key to start again"; 
                 document.querySelector('.defenderName').innerText = '';
                 document.querySelector('.whenCounters').innerText = '';
                 document.querySelector('.whenAttacks').innerText = '';
@@ -108,20 +118,14 @@ $(document).ready(function () {
 
     // let audioElement = document.createElement("audio");
     // audioElement.setAttribute("src", "../game_of_thrones.mp3");
-        $('body').hide().addClass('fitscreen');
+        
 
     document.onkeyup = function (evt) {
         $('body').hide().addClass('fitscreen');
 
-        if (userLost == true) {
-            $('.bot').show();
-            defender = null;
-            attacker = null;
-            fightStarted = false;
-            
-        }
         
-        if (userLost == false) {
+        
+        {
             $('body').show().removeClass("fitscreen");
             $('#topSelector').show();
             $('#middle').hide();
@@ -146,6 +150,7 @@ $(document).ready(function () {
                         defenderNm = characters[defender].name;
                         defenderHP = characters[defender].health;
                         defenderAP = characters[defender].attack;
+                        defenderCP = characters[defender].enemyAttackBack;
 
                         document.querySelector('.defenderName').innerText = defenderNm;
                         document.querySelector('.defenderHP').innerText = 'HP: ' + defenderHP;
