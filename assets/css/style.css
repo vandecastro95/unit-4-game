@@ -14,9 +14,10 @@ body {
 .fitscreen {
     background-color: black;
     background-image: url("../images/fitscreen.jpg");
-    background-size: 100%;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: bottom
+    ;
 }
 
 .charList {
@@ -86,13 +87,15 @@ h5 {
     
 } 
 
-body {
-    display: none;
-}
-
 h6 {
     position: absolute;
 }
 
+.container-table {
+    position: absolute;
+}
+.vertical-center-row {
+    width: 100%;
+}
 
 
