@@ -1,0 +1,98 @@
+
+html, body {
+    height:100%;
+} 
+
+body {
+    background-color: black;
+    background-image: url("../images/background.jpg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.fitscreen {
+    background-color: black;
+    background-image: url("../images/fitscreen.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.charList {
+    height: 150px;
+    padding: 0%;
+}
+
+.danaerys {
+    background-color: black;
+    background-image: url("../images/danaerys.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jonsnow {
+    background-color: black;
+    background-image: url("../images/jonsnow.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cersei {
+    background-color: black;
+    background-image: url("../images/cersei.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nightking {
+    background-color: black;
+    background-image: url("../images/nightking.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h5 {
+    padding-top: 130px;
+}
+
+#middle {
+    height: 350px;
+    display: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.HP {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2px;
+
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+}
+
+.attack {
+    position: absolute;
+    
+} 
+
+body {
+    display: none;
+}
+
+h6 {
+    position: absolute;
+}
+
+
+
