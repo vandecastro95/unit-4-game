@@ -87,15 +87,71 @@ h5 {
     
 } 
 
-h6 {
-    position: absolute;
+.char span {
+    position: relative;
+    top: 80%;
+    right: 40%;  
 }
 
-.container-table {
-    position: absolute;
-}
-.vertical-center-row {
-    width: 100%;
+.danny {
+    background-image: url("../images/danaeryswin.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.johny {
+    background-image: url("../images/jonsnowwin.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.cersy {
+    background-image: url("../images/cerseiwin.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nighty {
+    background-image: url("../images/nightkingwin.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron {
+    opacity: .5;
+    height: 200px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.johnyL {
+    background-image: url("../images/jonsnowlost.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nightyL {
+    background-image: url("../images/nightkinglost.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dannyL {
+    background-image: url("../images/danaeryslost.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cersyL {
+    background-image: url("../images/cerseilost.gif");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
