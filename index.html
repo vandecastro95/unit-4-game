@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body class="fitscreen">
+    <body class="fitscreen d-none">
             <div class="container-fluid">
-                    <div id="topSelector" class="row fixed-top charList text-center text-white">
-                            <div class=" col-2 danaerys m-2 ml-5 char" value ="danaerys"><h6>danaerys</h6></div>
-                            <div class=" col-2 jonsnow m-2 char" value ="jonsnow"><h6>jonsnow</h6></div>
-                            <div class=" col-2 nightking m-2 char" value ="nightking"><h6>nightking</h6></div>
-                            <div class=" col-2 cersei m-2 char" value ="cersei"><h6>cersei</h6></div>
+                    <div id="topSelector" class="row fixed-top charList text-right text-white">
+                            <div class=" col-2 danaerys m-2 ml-5 char"><span>danaerys</span>HP:180</div>
+                            <div class=" col-2 jonsnow m-2 char"><span>jonsnow</span>HP:230</div>
+                            <div class=" col-2 nightking m-2 char"><span>nightking</span>HP:250</div>
+                            <div class=" col-2 cersei m-2 char"><span>cersei</span>HP:200</div>
                     </div>
 
                     <div id="middle" class="row">
@@ -38,25 +38,32 @@
                         <div class="col-11"><span class="whenAttacks text-danger ml-5"></span></div>
                     </div>
 
-                    <div class="row">
+                    <div class="row">   
                         <div class="col-1"></div>
                         <div class="col-11"><span class="whenCounters text-danger ml-5"></span></div>
                         </div>
                     </div>
 
-                    <br>
                     <div class="row nextOne">
                         <div class="col-12 "> Choose next Enemy </div>
                     </div>
                     
                     <div class="row"></div>
-                    <div id="enemySelector" class="row fixed-bottom charList text-center text-white">
-                        <div id = "danaerys" class=" col-2 danaerys m-2 ml-5 char bot"><h6 class="mb-1">danaerys</h6></div>
-                        <div id = "jonsnow" class=" col-2 jonsnow m-2 char bot"><h6 class="mb-1">jonsnow</h6></div>
-                        <div id = "nightking" class=" col-2 nightking m-2 char bot"><h6 class="mb-1">nightking</h6></div>
-                        <div id = "cersei" class=" col-2 cersei m-2 char bot"><h6 class="mb-1">cersei</h6></div>
+                    <div id="enemySelector" class="row fixed-bottom charList text-right text-white">
+                        <div id = "danaerys" class=" col-2 danaerys m-2 ml-5 char bot"><span class="mb-1">danaerys</span>HP:180</div>
+                        <div id = "jonsnow" class=" col-2 jonsnow m-2 char bot"><span class="mb-1">jonsnow</span>HP: 230</div>
+                        <div id = "nightking" class=" col-2 nightking m-2 char bot"><span class="mb-1">nightking</span>HP: 250</div>
+                        <div id = "cersei" class=" col-2 cersei m-2 char bot"><span class="mb-1">cersei</span>HP: 200</div>
                     </div>
                 </div>
+
+                <div class="jumbotron jumbotron-fluid bg-dark text-danger">
+                    <div class="container">
+                      <h1 class="display-4"></h1>
+                    </div>
+                  </div>
+
+                  <audio id="sound_tag" src="assets/game_of_thrones.mp3" preload="none"></audio>
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script src="assets/javascript/game.js"></script>
